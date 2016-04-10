@@ -54,7 +54,15 @@
     
     * Composite
     
- * **XP Value**   
+* **XP Value**   
   
     * Simplicity   
 
+* **Journal Entry**
+
+   I am advocating Simplicity Core Value of eXtreme Programming Value. During the First Week, we discussed on how to implement "Sky Protector" game on Greenfoot Tool. We started to make basic project requirement gathering and diagrams related to our project. We discussed on making the flow of "Sky Protector" game as simple as possible.
+
+   We also did discuss the issue of implementing the code such that the complexity is minimum and the overhead gets reduced. We also decided to take simple and small steps in order to make any functionality work. The team will be making constant efforts in using polymorphism and inheritance helping us find things when needed.
+
+   For maximizing the efficiency, everyone has given their ideas so that the team can apply during the development. There would be no Duplicity in Methods, Classes or Modules. We will be implementing the code such that the Classes should organize ideas in a readily understandable way and naming should be appropriate and self-explanatory so no one has to explain method, member or class names with additional documentation.
+   
