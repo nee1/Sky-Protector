@@ -48,10 +48,13 @@
 
 * **Design Pattern**
 
-    * Observer
+    * State
   
-    * Strategy
+    * Observer
     
-    * Chain of Responsibility
+    * Composite
     
+ * **XP Value**   
+  
+    * Simplicity   
 
