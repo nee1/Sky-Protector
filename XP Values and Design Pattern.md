@@ -66,3 +66,28 @@
 
    For maximizing the efficiency, everyone has given their ideas so that the team can apply during the development. There would be no Duplicity in Methods, Classes or Modules. We will be implementing the code such that the Classes should organize ideas in a readily understandable way and naming should be appropriate and self-explanatory so no one has to explain method, member or class names with additional documentation.
    
+   
+## 4. Anuvrat Tiku
+
+* **Design Pattern**
+
+    * State
+  
+    * Factory
+    
+    * Decorator
+    
+* **Kanban Value**   
+  
+    * Limit Work In Progress   
+
+* **Journal Entry**
+
+  I have selected the Kanban principle of “Limiting Work in Progress” as my value. Limiting the work in progress is one of the core principles of Kanban. It is widely accepted that the human brain cannot do multitasking like a computer. So by limiting the work in progress, we are going to reduce task switching and avoid distraction by successfully reducing multitasking. This will help us to achieve a proper flow which as a result will help us to calculate exactly the amount of work that can be done at a given time. This also helps to REDUCE WASTE due to wrong assumptions and rework by using the virtue of feedback.
+
+  A professional Kanban board should easily allow us to measure the work in progress for each activity by modifying the board template. We may also set the maximum limit for any task in progress. In our project we are using the Waffle.io board which is linked to Github.
+
+  Practically, a Kanban team should only concern itself with the work  "In Progress". Once a task that is in progress is done, it will be moved to the Done section and a new task from the product backlog queue is pulled into the In Progress column and work is started on it. This essentially harnesses a culture of "Done". This is important because "Cycle Time" is an important metric for Agile teams. Limiting the Work in Progress leads to smaller cycle time and increased efficiency. We all know that that the only proof of a successful software development team is working software. To summarize, what we wish to create is a "sustainable engineering culture". By limiting the "Work in Progress", we do not want to rush the developers into doing coding in order to avoid conditions of work overload in particular conditions. They are meant to support solid agile engineering practices that protect the quality of the product and health of the code base. This is how my value of Limiting Work in Progress is going to assist my team in good software engineering.
+   
+   
+   
