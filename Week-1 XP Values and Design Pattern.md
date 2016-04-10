@@ -111,3 +111,22 @@
 
    On the second day of meeting, each team member began to decide the design pattern to implement on which part of the source code. For decision such as this, each team member discussed their design pattern in which they have fair amount of expertise. After some time of discussion the team decided the patterns. Throughout the each meeting the communication was transparent.
 
+## 6. Neel Patel
+
+* **Design Pattern**
+
+    * Command pattern
+  
+    * Adapter
+    
+    * Strategy
+    
+* **XP Value**   
+  
+    * Respect
+    
+* **Journal Entry**
+
+  In a pure agile team, there are no project managers. All team members have equal responsibilities. It is important for all team members to have mutual respect for each other. It is the first principle of agile : People and Interactions over process and tools. An integral part of a successful software engineering team is constructive and friendly interaction between its members. This can only be possible if there is respect among the team members. Each and every team member's contribution should be valued equally even if it is mere enthusiasm at some times.
+  
+   Firstly, I advocated the value of Respect by conveying that we must listen to all team members with respect and attention. It is important to listen to each member's opinion and not dismiss it disrespectfully if it is different from ours. This creates a constructive environment in the team. It is important to see things from their perspective rather than just blatantly dismissing some one’s idea. One more necessary part of respecting team members is giving them the responsibility to make independent decisions about their own work. In my view, the principle of respect is possibly one of the most important of all values. This is because the only way to be respected yourself, is to first respect others.
