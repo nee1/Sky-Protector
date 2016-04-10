@@ -103,3 +103,7 @@
   
     * Communication
     
+* **Journal Entry**
+
+  I am advocating Communication core value of Extreme Programming agile methodology. After the first week of project assignment, we discussed on which game we want to implement design patterns. For deciding the game, every team member met and held communication at the location which was decided collectively as team meeting place for upcoming project meetings.
+  
