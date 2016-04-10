@@ -99,3 +99,7 @@
     
     * State
     
+* **XP Value**   
+  
+    * Communication
+    
