@@ -89,5 +89,13 @@
 
   Practically, a Kanban team should only concern itself with the work  "In Progress". Once a task that is in progress is done, it will be moved to the Done section and a new task from the product backlog queue is pulled into the In Progress column and work is started on it. This essentially harnesses a culture of "Done". This is important because "Cycle Time" is an important metric for Agile teams. Limiting the Work in Progress leads to smaller cycle time and increased efficiency. We all know that that the only proof of a successful software development team is working software. To summarize, what we wish to create is a "sustainable engineering culture". By limiting the "Work in Progress", we do not want to rush the developers into doing coding in order to avoid conditions of work overload in particular conditions. They are meant to support solid agile engineering practices that protect the quality of the product and health of the code base. This is how my value of Limiting Work in Progress is going to assist my team in good software engineering.
    
-   
-   
+## 5. Shalin Amin
+
+* **Design Pattern**
+
+    * Chain of Responsibility
+  
+    * Proxy Authentication
+    
+    * State
+    
