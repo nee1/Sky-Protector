@@ -107,3 +107,4 @@
 
   I am advocating Communication core value of Extreme Programming agile methodology. After the first week of project assignment, we discussed on which game we want to implement design patterns. For deciding the game, every team member met and held communication at the location which was decided collectively as team meeting place for upcoming project meetings.
   
+On the first day of meeting, every team member gave the suggestions about which game we will choose on which each team member will implement design pattern of his own choosing. One team member gave the suggestion of implementing design pattern on black-jack game. But the main problems was arisen when everyone gave their idea and shown their pro-activeness. But after the long discussion everyone arrived at ubiquitous conclusion that our team will implement design patterns on "Sky-Protector" game.
