@@ -43,3 +43,15 @@
   
   So, we have decided to collect feedback from all the teammates throughout the project once in a week because we understand that frequent feedback are very useful to make efficient system.Taking frequent feedback will help to prevent incorrect development in it's early stage.We can collect feedback from generating tests and by communicating with users.This is how feedback is closely related to XP value communication.By implementing feedback,the correct way to approach development is talking about the project first and then adapting our process to it and it is not the way around.To summarize we are going to take every iteration seriously and at the end of which are going to have working software.
 
+
+## 3. Darshil Saraiya
+
+* **Design Pattern**
+
+    * Observer
+  
+    * Strategy
+    
+    * Chain of Responsibility
+    
+
