@@ -24,6 +24,11 @@ public class MyWorld extends World
         Alien alien = new Alien();
         addObject(alien, 504, 61);
         alien.setLocation(1237,49);
+        
+        //Adding Rocket to the UI
+        Rocket rocket = new Rocket();
+        addObject(rocket, 78, 395);
+        rocket.setLocation(67, 376);
     }
 
     public void addStars(int howMany)

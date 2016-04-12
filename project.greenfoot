@@ -1,5 +1,6 @@
 #Greenfoot properties
-#Tue Apr 12 15:03:34 PDT 2016
+#Tue Apr 12 15:19:18 PDT 2016
+class.Rocket.superclass=greenfoot.Actor
 readme.name=@README
 target2.name=Star
 class.Alien.superclass=greenfoot.Actor
@@ -55,4 +56,5 @@ package.numDependencies=2
 project.charset=UTF-8
 readme.height=58
 dependency2.to=Alien
+class.Rocket.image=Rocket.png
 class.Alien.image=startrek02.gif
