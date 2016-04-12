@@ -16,11 +16,14 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(1300, 800, 1); 
          GreenfootImage img = new GreenfootImage(1300, 800);
         img.fill();
         setBackground(img);
         addStars(500); 
+        Alien alien = new Alien();
+        addObject(alien, 504, 61);
+        alien.setLocation(1237,49);
     }
 
     public void addStars(int howMany)
