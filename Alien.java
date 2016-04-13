@@ -17,7 +17,18 @@ public class Alien extends Actor
     public void act() 
     {
         // Add your action code here.
-
+        if (movesides == true) {
+            setLocation(getX(), getY ()+2);
+            if (getY() > 700) {
+                movesides = false;
+            } 
+        }
+        if (movesides == false) {
+            setLocation(getX(), getY ()-2);
+            if (getY() < 100) {
+                movesides = true;
+            }
+        }  
     
 }
 }
