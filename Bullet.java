@@ -11,7 +11,9 @@ public class Bullet extends Actor
      
    public void act() 
    {
-        move(27); 
+        move(45); 
+        
+            
         if (getX() > 1280)
         {
             rocket.weapon=null;
