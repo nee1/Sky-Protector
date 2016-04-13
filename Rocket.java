@@ -12,9 +12,16 @@ public class Rocket extends Actor
      * Act - do whatever the Rocket wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    Bullet weapon;
+    
     public void act() 
     {
-        moveRocket();
+      moveRocket();
+        
+      if (Greenfoot.isKeyDown("space"))
+      {
+          //shoot();
+      }  
     }    
     
     public void moveRocket() {
@@ -29,4 +36,5 @@ public class Rocket extends Actor
         
         }
     }
+
 }
