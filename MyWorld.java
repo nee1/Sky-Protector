@@ -13,10 +13,11 @@ public class MyWorld extends World
     Healthbar healthbar = new Healthbar();
     HealthBarRocket healthbarrocket = new HealthBarRocket();
     
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+    Counter counter = new Counter();
+    public Counter getCounter()
+    {
+        return counter;
+    }
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -25,10 +26,11 @@ public class MyWorld extends World
         img.fill();
         setBackground(img);
         addStars(500); 
-        Alien alien = new Alien();
+        Alien alien = new Alien(counter);
         addObject(alien, 504, 61);
         alien.setLocation(1237,49);
-        
+        addObject(counter, 100, 40);
+        counter.setLocation(656, 43);
         //Adding Rocket to the UI
         Rocket rocket = new Rocket();
         addObject(rocket, 78, 395);
