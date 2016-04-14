@@ -1,6 +1,6 @@
 import greenfoot.*;
 import java.awt.Color;
-public class CounterFeuer extends Actor
+public class CounterFire extends Actor
 {
      int score = 0;
     public void act() 

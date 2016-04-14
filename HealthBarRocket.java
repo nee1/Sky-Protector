@@ -24,7 +24,7 @@ public class HealthBarRocket extends Actor
         myImage.drawRect(0, 0, healthBarWidthRocket+1, healthBarHeightRocket+1);
         myImage.setColor(Color.RED);
         myImage.fillRect(1, 1, healthRocket*pixelsPerHealthPointRocket, healthBarHeightRocket);
-        
+     
         //How does it look like
     }
     

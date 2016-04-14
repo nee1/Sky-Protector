@@ -25,7 +25,7 @@ public class Healthbar extends Actor
         GreenfootImage myImage = getImage();
         myImage.setColor(Color.WHITE);
         myImage.drawRect(0, 0, healthbarWidth+1, healthbarHeight+1);
-        myImage.setColor(Color.RED);
+        myImage.setColor(Color.GREEN);
         myImage.fillRect(1, 1, health*pixelsPerHealthPoint, healthbarHeight);
         
         //WIe sieht es aus
