@@ -9,7 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     GreenfootSound muzik = new GreenfootSound("score.mp3");
-
+    
+    Healthbar healthbar = new Healthbar();
+    HealthBarRocket healthbarrocket = new HealthBarRocket();
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -31,6 +34,10 @@ public class MyWorld extends World
         addObject(rocket, 78, 395);
         rocket.setLocation(67, 376);
         //muzik.playLoop();
+        
+        //Adding HealthBars of Rocket and Enemy Ship
+        addObject(healthbar,55,22);
+        addObject(healthbarrocket,1244,22);
     }
 
     public void addStars(int howMany)
