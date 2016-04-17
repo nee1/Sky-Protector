@@ -105,3 +105,27 @@
 
     
     I also asked all the team members to share the problem because sometimes any team member may know a powerful and efficient solution to the problem other team member is facing.
+    
+## 6. Neel Patel 
+
+* **Design Pattern**
+
+    * Command
+      
+    * Adapter
+    
+    * Strategy
+
+* **XP Value**   
+  
+    * Respect  
+
+* **Journal Entry**
+
+    My Extreme Programming value is respect. We are into the second week of development phase and our team has six members working together on the project. Whenever we used to sit together to brainstorm on ideas, sometimes things used to heat up a little. This was because everyone was eager to contribute to the project at the best of their abilities. Here was my role to implement my Extreme Programming value.
+
+    
+    My task was to remind all our team members as well as myself that our focus should be maximizing the brainstorming session rather than getting angry over petty things. Everyone has a opinion and everyone should respect every team member’s opinion. This is how great team thrives. I reminded them that one has to give respect to get respect. So I personally observed that each and every team member respects each other's decisions and work.
+
+    
+    Once understood the value of respect, the team members were all cooperative and we had a great brainstorming session as a result. This was a great achievement for myself and the team as we managed to place the team above self and this was only possible due to the values of Respect!
