@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Space
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Water\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Space()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Space.\r\n\ \r\n
+comment2.params=
+comment2.target=Score\ getScore()
+comment3.params=
+comment3.target=Lives\ getLives()
+comment4.params=
+comment4.target=SLives\ getSLives()
+comment5.params=
+comment5.target=Killed\ getKilled()
+comment6.params=
+comment6.target=RHealth\ getRHealth()
+comment7.params=
+comment7.target=SHealth\ getSHealth()
+comment8.params=
+comment8.target=PHealth\ getPHealth()
+comment9.params=
+comment9.target=void\ act()
+numComments=10

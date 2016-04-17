@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.target=Rocket
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fish\ here.\r\n\r\n\ @XianBallz\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.target=Ship
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ship\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=
@@ -9,10 +9,8 @@ comment3.params=
 comment3.target=void\ shoot()
 comment4.params=
 comment4.target=void\ collide()
-comment4.text=Hit\ Something
 comment5.params=
 comment5.target=void\ die()
-comment5.text=Die
 comment6.params=
 comment6.target=void\ explode()
 comment6.text=Death\ Animation

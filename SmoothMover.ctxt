@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=SmoothMover
+comment0.text=\r\n\ A\ superclass\ for\ specific\ actor\ classes\ that\ add\ smooth\ movement\ functionality.\r\n\ \r\n\ Movement\ is\ based\ on\ doubles\ (rather\ than\ ints),\ and\ thus\ generates\ smoother\r\n\ movement\ for\ fast\ moving\ actors\ in\ high\ resolution\ worlds.\r\n\ \r\n\ The\ SmoothMover\ also\ implements\ world\ wrap-around\:\ when\ moving\ out\ of\ the\ world\ at\ any\ edge,\r\n\ the\ actor\ will\ enter\ again\ at\ the\ opposite\ side.\r\n\ \r\n\ Requires\ class\ Vector.\r\n\ \r\n\ @author\ Poul\ Henriksen\r\n
+comment1.params=
+comment1.target=SmoothMover()
+comment2.params=speed
+comment2.target=SmoothMover(Vector)
+comment2.text=\r\n\ Create\ new\ thing\ initialised\ with\ given\ speed.\r\n
+comment3.params=
+comment3.target=void\ move()
+comment3.text=\r\n\ Move\ forward\ one\ step.\r\n
+comment4.params=
+comment4.target=boolean\ outOfWorld()
+comment5.params=x\ y
+comment5.target=void\ setLocation(double,\ double)
+comment5.text=\r\n\ Providing\ 'setLocation'\ based\ on\ doubles.\ This\ will\ eventually\ call\r\n\ the\ built-in\ 'setLocation'\ method\ in\ Actor.\r\n
+comment6.params=x\ y
+comment6.target=void\ setLocation(int,\ int)
+comment6.text=\r\n\ Override\ the\ default\ 'setLocation'\ method\ to\ keep\ our\ own\ coordinates\r\n\ up-to-date.\r\n
+comment7.params=s
+comment7.target=void\ increaseSpeed(Vector)
+comment7.text=\r\n\ Increase\ the\ speed\ with\ the\ given\ vector.\r\n
+comment8.params=
+comment8.target=Vector\ getSpeed()
+comment8.text=\r\n\ Return\ the\ current\ speed.\r\n
+numComments=9

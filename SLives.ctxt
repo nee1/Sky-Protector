@@ -1,7 +1,11 @@
 #BlueJ class context
 comment0.target=SLives
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ SLives\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Counter\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ SLives\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.target=SLives()
+comment2.params=amount
+comment2.target=void\ bumpCount(int)
+comment2.text=\r\n\ Increase\ the\ total\ amount\ displayed\ on\ the\ counter,\ by\ a\ given\ amount.\r\n
+comment3.params=
+comment3.target=int\ getValue()
+numComments=4

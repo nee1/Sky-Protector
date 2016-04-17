@@ -17,7 +17,7 @@ public class Alien extends Actor
     }
     public void act() 
     {
-        World backdrop = (MyWorld) getWorld();
+        World backdrop = (Space) getWorld();
         if (movesides == true) {
             setLocation(getX(), getY ()+2);
             if (getY() > 700) {
