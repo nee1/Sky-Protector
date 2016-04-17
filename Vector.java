@@ -58,4 +58,64 @@ public class Vector
         length = length - d;
         updateCartesian();
     }
-  }
+  public void scale(double factor) {
+        length = length * factor;
+        updateCartesian();
+    }
+    
+    public void setNeutral() {
+        dx = 0.0;
+        dy = 0.0;
+        length = 0.0;
+        direction = 0;
+    }
+    
+    /**
+     * Update the direction and length fom the current dx, dy.
+     */
+    private void updatePolar() {
+        this.direction = (int) Math.toDegrees(Math.atan2(dy, dx));
+        this.length = Math.sqrt(dx*dx+dy*dy);
+    }   
+    
+    /**
+     * Update dx and dy from the current direction and length.
+     */
+    private void updateCartesian() {
+        dx = length * Math.cos(Math.toRadians(direction));
+        dy = length * Math.sin(Math.toRadians(direction));   
+    }   
+
+    public double getX() {
+        return dx;
+    }
+     
+    public double getY() {
+        return  dy;
+    }
+    
+    public int getDirection() {
+        return direction;
+    }
+    
+    public double getLength() {
+        return length;
+    }
+    
+    /**
+     * Create a copy of this vector.
+     */
+    public Vector copy() {
+        Vector copy = new Vector();
+        copy.dx = dx;
+        copy.dy = dy;
+        copy.direction = direction;
+        copy.length = length;
+        return copy;
+    }
+    
+    public String toString() {
+        return "[" + direction + " " + length + " / " + dx + "," + dy + "]";
+    }
+}
+
