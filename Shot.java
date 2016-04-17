@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Bullet here.
+ * Write a description of class Shot here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Bullet extends Mover
+public class Shot extends Mover
 {
-    /**
+     /**
      * Act - do whatever the Bullet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
@@ -25,7 +25,7 @@ public class Bullet extends Mover
         
     }
     
-    public Bullet(int rotation)
+    public Shot(int rotation)
     {
         setRotation(rotation);
         GreenfootImage img = getImage();
@@ -43,5 +43,5 @@ public class Bullet extends Mover
         
         else
         return false;
-    }
+    }   
 }
