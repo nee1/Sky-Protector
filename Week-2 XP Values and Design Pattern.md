@@ -60,9 +60,7 @@
 
       We are in the second week of the project development. In the beginning of this week, all the team members had the basic idea of what was expected to be delivered. So we divided the task among us in terms of what components need to be coded by whom. We have a team of six members. So it was important to establish a basic ground rule to begin with concerning limiting work in progress : Not more than 6 tasks can ever be "In Progress"at any time. This maps 1 in progress task to each member. We wan to avoid parallelization of tasks. What I wanted was my team to focus on only one task at a time.This avoids any unnecessary lags or bottlenecks. Having more than one task leads to unnecessary task-switching and confusion. All team members can only proceed to a new task once they have closed one task. A scenario that occurred was: I was supposed to work on basic home screen in this second week but I was unable to finish it. So I decided to start working on another task to get some progress. So I decided to push the Home screen coding back to the product backlog and start working on the new task because we are not supposed to work on more than one item at one time. This is how I implemented the Kanban value of Limiting the Work in Progress in our project.  
 
- ## 4. Aditya Chauhan(010816676)
-
-* **github : https://github.com/addysunn**
+ ## 4. Aditya Chauhan
 
 * **Design Pattern**
 
@@ -84,3 +82,26 @@
     
     In one specific scenario one of our teammates started building code which was not consistent with our development so before he could go far with that we gave him our feedback regarding his development. Based on our feedback he understood where he was going wrong and therefore made changes to his code. This was a good takeaway from this week and we decided to make our feedback sessions more frequent and rigorous.  
 
+## 5. Shalin Amin
+
+* **Design Pattern**
+
+    * Chain of Responsibility
+      
+    * Proxy Authentication
+    
+    * State
+
+* **XP Value**   
+  
+    * Communication  
+
+* **Journal Entry**
+
+    During past week, I observed improved interaction between all my team members in finalization of project idea. During the second week, I noticed that solving twisted problems raises a lot of communication between the team. When we were deciding about the different design patterns and how to implement them, team members got actively involved in criticizing each other’s ideas. I resolved conflicts by conveying the utter importance of having meaningful and logical communication instead of having non-substantive arguments.
+
+    
+    If any team member faces any problems, I urged them to communicate effectively with other people who have encountered the same problems. In this sense, this leaves the team free of solving new problems instead of resolving older ones. I channeled the idea of self-evaluation so that they can realize if the problem was caused by lack of communication, If that is the case,then communicating with the other team members may be able to solve the problem.
+
+    
+    I also asked all the team members to share the problem because sometimes any team member may know a powerful and efficient solution to the problem other team member is facing.
