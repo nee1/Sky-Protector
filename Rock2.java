@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Rock2 extends Spawner
+public class Rock2 extends EnemyClass
 {
     int shotstaken=0;
     int ballstaken=0;

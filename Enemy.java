@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author XianBallz
  * @version (a version number or a date)
  */
-public class Enemy extends Spawner
+public class Enemy extends EnemyClass
 {
     
     int shotstaken=0;

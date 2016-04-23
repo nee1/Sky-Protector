@@ -52,12 +52,6 @@ public class EnemyFactory
         }
         
    
-        else if(enemyType == 7)
-        {
-           enemyClass = new Baby();  
-        }
-        
-        
         return enemyClass;
         
     }
