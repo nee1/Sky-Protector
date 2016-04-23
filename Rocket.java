@@ -64,8 +64,12 @@ public class Rocket extends Mover
             int rot = getRotation()-10;
             int xOffset = (int)(40*Math.cos(Math.toRadians(rot)));
             int yOffset = (int)(40*Math.sin(Math.toRadians(rot)));
-            Bullet b = new Bullet(getRotation());
-            getWorld().addObject(b, getX()+xOffset, getY()+yOffset);
+             Space spaceWorld = (Space) getWorld();
+            Score r = spaceWorld.getScore();
+             if(r.totalCount>200){
+                changeStrategy(new BlueShoot());
+            }
+            getWorld().addObject(shoot.shootBullet(this), getX()+xOffset, getY()+yOffset);
             shootdelay=0;
         }
     }
