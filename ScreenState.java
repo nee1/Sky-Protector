@@ -17,7 +17,7 @@ public class ScreenState implements ScreenMachineState
         System.out.println("DoGameOver of ScreenState :: " + this.getClass().getName());
     }
     
-    public void doGameOver(Space spaceWorld){
+    public void doGameOver(SkyWorld spaceWorld){
         System.out.println("DoGameOver of ScreenState :: " + this.getClass().getName());
     }
     
@@ -28,6 +28,6 @@ public class ScreenState implements ScreenMachineState
     public void makeWorld(){
     }
     
-    public void makeworld(Space s){
+    public void makeWorld(SkyWorld s){
     }
 }

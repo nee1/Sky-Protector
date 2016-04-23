@@ -15,9 +15,10 @@ public class ScreenGameOver extends ScreenState
     }
     
     @Override
-    public void makeworld(Space skyworld){
+    public void makeWorld(SkyWorld skyworld){
         
         //System.out.println("getWorld in ScreenGameOver : " + (Space)getWorld());
-        GameOverScreen gameOverScreen = new GameOverScreen(screenGameOverSSM);
+        GameOverScreen gameOverScreen = new GameOverScreen(screenGameOverSSM,skyworld);
+        skyworld.addObject(gameOverScreen,skyworld.getWidth()/2,skyworld.getHeight()/2);
     }
 }
