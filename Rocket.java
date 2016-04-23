@@ -16,7 +16,11 @@ public class Rocket extends Mover
     private boolean dead=false;
     public boolean FriendDead=false;
     private static final int NUM_FRAGMENTS = 40;
-
+    private ShootStrategy shoot;
+    
+    public Rocket(){
+        shoot = new RedShoot();
+    }
 
     public void act()
     {
@@ -274,6 +278,10 @@ public class Rocket extends Mover
         }
     }
 
+    public void changeStrategy(ShootStrategy s){
+        shoot = s;
+    }
+    
     /**Is 2nd Player Dead?*/
     /**public void friendCheck()
     {
