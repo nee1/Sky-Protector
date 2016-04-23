@@ -17,7 +17,7 @@ public class Space extends World
     private PHealth thePHealth;
     private int timer = 0;
     private int planespawn = 0;
-    
+    private static GreenfootSound GameofThrones;
     /**
      * Constructor for objects of class Space.
      * 
@@ -43,6 +43,9 @@ public class Space extends World
         
         theSLives = new SLives();
         theSHealth = new SHealth();
+        
+        GameofThrones = new GreenfootSound("GameofThrones.mp3");
+        GameofThrones.play();
         
         /**Two-Player Commands*/
         /**
