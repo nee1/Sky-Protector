@@ -7,7 +7,7 @@ import java.awt.Color;
  * @XianBallz 
  * @version (a version number or a date)
  */
-public class Killed extends Score
+public class Killed extends Actor implements Observer
 {
     private int totalCount = 0;
 
@@ -16,6 +16,7 @@ public class Killed extends Score
         setImage(new GreenfootImage("", 20, Color.WHITE, Color.BLACK));
     }
 
+
     /**
      * Increase the total amount displayed on the counter, by a given amount.
      */
@@ -23,5 +24,9 @@ public class Killed extends Score
     {
         totalCount += amount;
         setImage(new GreenfootImage("" + totalCount, 20, Color.WHITE, Color.BLACK));
+    }
+    public void ItotalCount(int amount){
+        totalCount += amount;
+        bumpCount();
     }
 }
