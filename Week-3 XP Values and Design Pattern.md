@@ -16,3 +16,19 @@ After all the design patterns were identified, all the team members were scared 
 
 When a team member was implementing Command Pattern, he had an idea which would remove most of the complexity of the game. But, the team was resisting the change and deletion of current code. I encouraged them to put the idea into production. I told them that it is ingenuity of people, not the process that causes the project to succeed.
 
+## 2. Aditya Chauhan
+
+* **Design Pattern**
+
+    * Observer
+    
+* **XP Value**   
+  
+    * Feedback   
+
+* **Journal Entry**
+
+I am advocating Extreme programming value feedback for our team project. This is our third week of project development. During this three weeks period we almost completed creation of game using greenfoot. After that each individual finalized and started implementing their design patterns. Feedback is very important to stay on the right path during project development process. After completing coding in week 2 it was my responsibility to ensure that feedback from all team members regarding design patterns are collected and evaluated thoroughly, which helped us very much in finalizing our design patterns.
+
+Using feedback we unanimously finalized to go ahead with Strategy,Factory,Observer,State and Command design patterns. During third week I added code to add sound to our game Sky-Protector and took feedback from teammates to know their views regarding sound feel of game and made changes according to that. We take each and every feedback seriously and implement those feedback in our project to improve quality of project. Now we are looking forward to use feedback in the final week to eliminate bugs.
+
