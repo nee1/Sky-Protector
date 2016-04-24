@@ -32,7 +32,23 @@ I am advocating Extreme programming value feedback for our team project. This is
 
 Using feedback we unanimously finalized to go ahead with Strategy,Factory,Observer,State and Command design patterns. During third week I added code to add sound to our game Sky-Protector and took feedback from teammates to know their views regarding sound feel of game and made changes according to that. We take each and every feedback seriously and implement those feedback in our project to improve quality of project. Now we are looking forward to use feedback in the final week to eliminate bugs.
 
-## 3. Shalin Amin
+## 4. Anuvrat Tiku
+
+* **Design Pattern**
+
+    * Factory
+    
+* **Kanban Value**   
+  
+    * Limiting Work in Progress 
+
+* **Journal Entry**
+
+My Kanban value is Limiting Work in Progress. We are in the third week of the development. Working software is the only metric for success of a software team. Planning and documentation can never replace real development. So its understood that lots of development is required to get working software. With an inexperienced team like ours, it is clear that the path to working software is not going to be a clear one. 
+
+Team members were actively involved in development and as a result each team member had more than two and even three activities in Progress at one time in waffle. We had ironed out a clear rule : Not more than one activity per week per person in waffle. But I had a reality check. We are in the pen-ultimate week of the project which is also a relatively short project. So I decided to be not so iron clad with the rules and allow some agility in the project on the condition that no team member would have more than two issue at the end of the week which will have one core development issue and one enhancement. I communicated this idea to me team mates and they took it very positively and started working in direction of limiting work in Progress immediately. 
+
+## 5. Shalin Amin
 
 * **Design Pattern**
 
@@ -50,18 +66,20 @@ There was a communication gap observed in area of common code that delayed the i
 
 I also made the coding easier by advocating the concept of Pair Programming when a team member's implementation of design pattern overlaps with the others. This resulted positively by displaying the status of work done by each team member to the team. Many of the problems were resolved because of this.
 
-## 4. Anuvrat Tiku
+## 6. Neel Patel
 
 * **Design Pattern**
 
-    * Factory
+    * State
     
-* **Kanban Value**   
+* **XP Value**   
   
-    * Limiting Work in Progress 
+    * Respect   
 
 * **Journal Entry**
 
-My Kanban value is Limiting Work in Progress. We are in the third week of the development. Working software is the only metric for success of a software team. Planning and documentation can never replace real development. So its understood that lots of development is required to get working software. With an inexperienced team like ours, it is clear that the path to working software is not going to be a clear one. 
+In third week, we decided to implement design patterns in our game Sky-Protector on top of the skeleton we had built in the first two weeks. When meetings were scheduled for the next phase of the project, each team member respected everyone's time by being punctual in all the meetings. In each meeting, I make sure every team member's suggestions and ideas are considered fairly before going ahead with the project.
 
-Team members were actively involved in development and as a result each team member had more than two and even three activities in Progress at one time in waffle. We had ironed out a clear rule : Not more than one activity per week per person in waffle. But I had a reality check. We are in the pen-ultimate week of the project which is also a relatively short project. So I decided to be not so iron clad with the rules and allow some agility in the project on the condition that no team member would have more than two issue at the end of the week which will have one core development issue and one enhancement. I communicated this idea to me team mates and they took it very positively and started working in direction of limiting work in Progress immediately. 
+The next major part of the project was what design patterns to use? And who will implement them? To decide which pattern will be implemented by whom, we weighed in the things like who is good at which part of the Game, who wants to learn and practice a particular pattern. All the team members carefully listened to everyone's views. Then according to everyone's opinion and every team member's approval, we came to the agreement on who will implement which pattern. As it was a unanimous decision everyone implemented their part enthusiastically.
+
+In this way, I had made sure that everyone understands the value of respect. And now everyone agrees to the fact that respecting all the team members brings higher productivity in the workflow.
