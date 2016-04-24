@@ -32,3 +32,20 @@ I am advocating Extreme programming value feedback for our team project. This is
 
 Using feedback we unanimously finalized to go ahead with Strategy,Factory,Observer,State and Command design patterns. During third week I added code to add sound to our game Sky-Protector and took feedback from teammates to know their views regarding sound feel of game and made changes according to that. We take each and every feedback seriously and implement those feedback in our project to improve quality of project. Now we are looking forward to use feedback in the final week to eliminate bugs.
 
+## 3. Shalin Amin
+
+* **Design Pattern**
+
+    * Observer
+    
+* **XP Value**   
+  
+    * Communication   
+
+* **Journal Entry**
+
+Last week was a great experience for each team member. Team was fully decided on all of the functional and nonfunctional requirements. The team communicated about completing the Skeleton of each team member's design patterns and if some problem occurs, I regulated short stand-up meetings at same collaborative work-space. And in those meetings, I told them if some problem occurs during the implementation of Skeleton, the individual with the problem should communicate with all the others to resolve the issues.
+
+There was a communication gap observed in area of common code that delayed the implementation of their respected module. I noticed which team member was less communicative and I made that person's communication possible with the other team members. The other pro about communication was that all team members appreciated the work done by the others that hiked the team spirit, efficiency and confidence of the team.
+
+I also made the coding easier by advocating the concept of Pair Programming when a team member's implementation of design pattern overlaps with the others. This resulted positively by displaying the status of work done by each team member to the team. Many of the problems were resolved because of this.
