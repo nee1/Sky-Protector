@@ -31,6 +31,24 @@
    I am advocating Extreme programming value feedback for our team project. This is our third week of project development. During this three weeks period we almost completed creation of game using greenfoot. After that each individual finalized and started implementing their design patterns. Feedback is very important to stay on the right path during project development process. After completing coding in week 2 it was my responsibility to ensure that feedback from all team members regarding design patterns are collected and evaluated thoroughly, which helped us very much in finalizing our design patterns.
 
    Using feedback we unanimously finalized to go ahead with Strategy,Factory,Observer,State and Command design patterns. During third week I added code to add sound to our game Sky-Protector and took feedback from teammates to know their views regarding sound feel of game and made changes according to that. We take each and every feedback seriously and implement those feedback in our project to improve quality of project. Now we are looking forward to use feedback in the final week to eliminate bugs.
+   
+## 3. Darshil Saraiya
+
+* **Design Pattern**
+
+    * Strategy
+    
+* **XP Value**   
+  
+    * Simplicity   
+
+* **Journal Entry**
+
+   During this week, while implementing the design patterns, most of the modules got too complicated to understand. After that, the team feared the exponential cost of changes and complications in the project. At that time, I reminded them that they are listening to their fears. I also conveyed to the team that is is better to do a simple thing today and pay a little more tomorrow if any module needs to be changed. So, we decided to do the simplest thing that would possibly work.
+
+   Simplicity and Communication support each other mutually. So, when the code got convoluted, I and my other team member who was advocating Communication eXtreme Programming value, gathered the team and collaboratively tried to simplify the implementation of making skeleton of all the design pattern.
+   
+   When the Game Over functionality was being implemented, the pattern structure was getting confusing. So, we resolved this issue by implementing game over functionality in simplest possible way. And. in state design pattern we decided unanimously on refactoring the system to be the simplest possible code with the current feature set.
 
 ## 4. Anuvrat Tiku
 
