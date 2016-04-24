@@ -49,3 +49,19 @@ Last week was a great experience for each team member. Team was fully decided on
 There was a communication gap observed in area of common code that delayed the implementation of their respected module. I noticed which team member was less communicative and I made that person's communication possible with the other team members. The other pro about communication was that all team members appreciated the work done by the others that hiked the team spirit, efficiency and confidence of the team.
 
 I also made the coding easier by advocating the concept of Pair Programming when a team member's implementation of design pattern overlaps with the others. This resulted positively by displaying the status of work done by each team member to the team. Many of the problems were resolved because of this.
+
+## 4. Anuvrat Tiku
+
+* **Design Pattern**
+
+    * Factory
+    
+* **Kanban Value**   
+  
+    * Limiting Work in Progress 
+
+* **Journal Entry**
+
+My Kanban value is Limiting Work in Progress. We are in the third week of the development. Working software is the only metric for success of a software team. Planning and documentation can never replace real development. So its understood that lots of development is required to get working software. With an inexperienced team like ours, it is clear that the path to working software is not going to be a clear one. 
+
+Team members were actively involved in development and as a result each team member had more than two and even three activities in Progress at one time in waffle. We had ironed out a clear rule : Not more than one activity per week per person in waffle. But I had a reality check. We are in the pen-ultimate week of the project which is also a relatively short project. So I decided to be not so iron clad with the rules and allow some agility in the project on the condition that no team member would have more than two issue at the end of the week which will have one core development issue and one enhancement. I communicated this idea to me team mates and they took it very positively and started working in direction of limiting work in Progress immediately. 
