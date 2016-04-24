@@ -12,7 +12,7 @@ public class InitialScreen extends World
     private HelpButton helpButton;
     private PlayGameCommand playCommand;
     private HelpCommand helpCommand;
-    
+    private static GreenfootSound GameofThrones;
     
     public InitialScreen()
     {    
@@ -23,6 +23,8 @@ public class InitialScreen extends World
         helpCommand = new HelpCommand();
         playCommand = new PlayGameCommand();
         prepare();
+        GameofThrones = new GreenfootSound("GameofThrones.mp3");
+        GameofThrones.play();
     }
     
     

@@ -6,17 +6,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author XianBallz
  * @version (a version number or a date)
  */
-public class Enemy extends EnemyClass
+public class Enemy extends EnemyClass implements Subject
 {
     
     int shotstaken=0;
     int ballstaken=0;
     int enemykilled=0;
-    
+    ArrayList<Observer> observers;
     /**
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Enemy(){
+        observers = new ArrayList<Observer>();        
+    }
     public void act() 
     {
         moveAround();
@@ -92,5 +95,18 @@ public class Enemy extends EnemyClass
         {
             turn(180);
         }      
+    }
+    public void attach(Observer o){
+        observers.add(o);
+    }
+    public void notifyO(){
+        for(Observer o : observers){
+            if(o instanceof Score){
+            o.ItotalCount(10);
+            }
+            else if(o instanceof Killed){
+            o.ItotalCount(1);
+            }
+    }
     }
 }
