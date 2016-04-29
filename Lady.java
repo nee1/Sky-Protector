@@ -6,12 +6,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Lady extends EnemyClass
+public class Lady extends EnemyClass implements Subject
 {
     int shotstaken=0;
     int ladykilled=0;
     int ballstaken=0;
-    
+    ArrayList<Observer> observers;
+    public Lady(){
+        observers = new ArrayList<Observer>();        
+    }
     public void act() 
     
     {
@@ -48,9 +51,13 @@ public class Lady extends EnemyClass
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(500);
             Killed counter2 = spaceWorld.getKilled();
-            counter2.bumpCount(1);
+            attach(scoreCounter);
+            attach(killCounter);
+            notifyO();
+            //counter.bumpCount(500);
+            
+            //counter2.bumpCount(1);
             ladykilled++;
             getWorld().removeObject(this);
         }
@@ -65,7 +72,11 @@ public class Lady extends EnemyClass
             getWorld().removeObject(this);
         }
     }
-    
+
+    public void attach(Observer o){
+        observers.add(o);
+    }
+
     public void moveAround()
     {
         if (ladykilled<5)
@@ -186,4 +197,14 @@ public class Lady extends EnemyClass
             Space.removeObject(Baby);
         }
     }
-    }   
+     public void notifyO(){
+        for(Observer o : observers){
+            if(o instanceof Score){
+            o.ItotalCount(10);
+            }
+            else if(o instanceof Killed){
+            o.ItotalCount(1);
+            }
+        }
+    }
+}   
