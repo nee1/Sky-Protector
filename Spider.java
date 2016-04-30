@@ -6,18 +6,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Spider extends EnemyClass
+public class Spider extends EnemyClass implements Subject
 {
     int shotstaken=0;
     int count=0;
     int health=100;
     int spiderkilled=0;
     int ballstaken=0;
-    
+    ArrayList<Observer> observers;
     /**
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+     public ESpider(){
+        observers = new ArrayList<Observer>();        
+    }
     public void act() 
     {
         moveAround();
@@ -49,9 +52,13 @@ public class Spider extends EnemyClass
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(30);
             Killed counter2 = spaceWorld.getKilled();
-            counter2.bumpCount(1);
+            attach(counter);
+            attach(counter2);
+            notifyO();
+            // counter.bumpCount(30);
+            // Killed counter2 = spaceWorld.getKilled();
+            // counter2.bumpCount(1);
             spiderkilled++;
             getWorld().removeObject(this);
         }
@@ -94,4 +101,17 @@ public class Spider extends EnemyClass
             turn(180);
         }      
     } 
+    public void attach(Observer o){
+        observers.add(o);
+    }
+    public void notifyO(){
+        for(Observer o : observers){
+            if(o instanceof Score){
+            o.ItotalCount(10);
+            }
+            else if(o instanceof Killed){
+            o.ItotalCount(1);
+            }
+        }
+    }
 }
