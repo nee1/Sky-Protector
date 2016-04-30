@@ -107,7 +107,7 @@ public class Spider extends EnemyClass implements Subject
     public void notifyO(){
         for(Observer o : observers){
             if(o instanceof Score){
-            o.ItotalCount(10);
+            o.ItotalCount(30);
             }
             else if(o instanceof Killed){
             o.ItotalCount(1);
