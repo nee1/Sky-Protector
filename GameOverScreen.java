@@ -24,5 +24,53 @@ public class GameOverScreen extends Actor
         helpButton = new HelpButton();
         helpCommand = new HelpCommand();
         playCommand = new PlayGameCommand();
+        //System.out.println("before calling doPlay of Initial Screen - in initialscreen : " + screenStateManager);
+        prepare();
+    }
+    
+    
+    public void prepare()
+    {
+        System.out.println("getWorld in GameOverScreen : " + getWorld());
+        skyworld.addObject(playButton, skyworld.getWidth()/2, 100);
+        skyworld.addObject(helpButton, skyworld.getWidth()/2, 200);
+        playButton.setCommand(playCommand);
+        helpButton.setCommand(helpCommand);
+        //ScreenStateManager ss = screenStateManager1;
+        //System.out.println("before calling doPlay of Initial Screen - in prepare : " + ss);
+        playCommand.setReceiver(
+            new Receiver()
+            {
+                public void performAction()
+                {
+                    if(Greenfoot.mouseClicked(playButton)){
+                        System.out.println("before calling doPlay Method in playCommand.setReciever : " + screenStateManager1);
+                        //System.out.println("before calling Screen2 : " + ss);
+                        screenStateManager1.doInitGame();
+                    }
+            }
+           });
+           
+        helpCommand.setReceiver(
+        new Receiver()
+            {
+                public void performAction()
+                {
+                        if(Greenfoot.mouseClicked(helpButton)){
+                                Help help = helpButton.getHelp();
+                                getWorld().addObject(help, getWorld().getWidth()/2, getWorld().getHeight()/2);
+                                        
+                                getWorld().addObject(new BackButton(help), 
+                                                help.getX() - help.getImage().getWidth()/2,
+                                                    help.getY() - help.getImage().getHeight()/2);
+                                
+                            }
+                }
+           }
+        );
+        
+        
+        
+        
     }
 }
