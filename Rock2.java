@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Rock here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Rock2 extends EnemyClass
 {
     int shotstaken=0;
@@ -14,6 +8,7 @@ public class Rock2 extends EnemyClass
     int NUM_FRAGMENTS=40;
     private boolean dead=false;
     int size = Greenfoot.getRandomNumber(50) + 40;
+    boolean rock = false; //To explode rock
     
     /**
      * Act - do whatever the Enemy wants to do. This method is called whenever
@@ -42,6 +37,7 @@ public class Rock2 extends EnemyClass
         {
             getWorld().removeObject(Shot);
             shotstaken++;
+            rock = true;
         }
         
         Actor Ball=getOneIntersectingObject(Ball.class);
@@ -51,7 +47,7 @@ public class Rock2 extends EnemyClass
             shotstaken++;
         }
         
-        if (atSide())
+        if (atSide() || rock)
         {getWorld().removeObject(this);}
         }
     }
