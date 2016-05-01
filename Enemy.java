@@ -71,17 +71,17 @@ public class Enemy extends EnemyClass implements Subject
     
     public void moveAround()
     {
-        if (enemykilled<50)
+        if (enemykilled<100)
         {
-            move(4);
+            move(5);
         }
         
-        if (enemykilled>=50)
+        if (enemykilled>=100)
         {
-            move(8);
+            move(9);
         }
         
-        if (Greenfoot.getRandomNumber(100)<5)
+        if (Greenfoot.getRandomNumber(150)<5)
         {
             turn(Greenfoot.getRandomNumber(180));
         }
