@@ -227,7 +227,7 @@ public class Rocket extends Mover
         {
             Space spaceworld = (Space) getWorld();
             Score counter2 = spaceworld.getScore();
-            counter2.bumpCount(1000);
+            counter2.ItotalCount(1000);
             World Space;
             Space = getWorld();
             Space.removeObject(Baby);

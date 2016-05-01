@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Space extends World
+public class Space extends SkyWorld
 {
     private Score theScore;
     private Lives theLives;
@@ -22,11 +22,17 @@ public class Space extends World
      * Constructor for objects of class Space.
      * 
      */
-    public Space()
+    public ScreenStateManager screenManager;
+    
+    /**
+     * Constructor for objects of class Space.
+     * 
+     */
+    public Space(ScreenStateManager ssMan)
     {    
         // Create a new world with 1000x600 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1); 
-        
+        screenManager = ssMan;
         addObject(new Rocket(),400,300);
         
         theScore = new Score();
@@ -44,9 +50,8 @@ public class Space extends World
         theSLives = new SLives();
         theSHealth = new SHealth();
         
-        GameofThrones = new GreenfootSound("GameofThrones.mp3");
-        GameofThrones.play();
-        
+        //System.out.println("in Space Constructor : " + super.getWorld());
+        //System.out.println("in Space Constructor : " + this.getWorld());
         /**Two-Player Commands*/
         /**
         addObject(theSHealth, 600, 570);
@@ -57,6 +62,14 @@ public class Space extends World
         setPaintOrder(Rocket.class, Score.class, RHealth.class, SHealth.class, Lives.class, SLives.class, PHealth.class, Killed.class);
     }
     
+    public ScreenStateManager getScreenStateManager(){
+        System.out.println("getState : " + screenManager);
+        //return super.getScreenStateManager();
+        return screenManager;
+    }
+    
+    
+   
     public Score getScore()
     {
         return theScore;

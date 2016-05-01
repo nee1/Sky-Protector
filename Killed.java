@@ -27,6 +27,6 @@ public class Killed extends Actor implements Observer
     }
     public void ItotalCount(int amount){
         totalCount += amount;
-        bumpCount();
+        bumpCount(totalCount);
     }
 }

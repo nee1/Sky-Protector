@@ -18,7 +18,7 @@ public class Spider extends EnemyClass implements Subject
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-     public ESpider(){
+     public Spider(){
         observers = new ArrayList<Observer>();        
     }
     public void act() 

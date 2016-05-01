@@ -14,7 +14,7 @@ public class Bee extends EnemyClass implements Subject
     int health=100;
     int beekilled=0;
     ArrayList<Observer> observers;
-     public Enemy(){
+     public Bee(){
         observers = new ArrayList<Observer>();        
     }
     /**

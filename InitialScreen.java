@@ -6,26 +6,30 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class InitialScreen extends World
+public class InitialScreen extends SkyWorld
 {
     private PlayButton playButton;
     private HelpButton helpButton;
     private PlayGameCommand playCommand;
     private HelpCommand helpCommand;
+    private ScreenStateManager screenStateManager1;
     private static GreenfootSound GameofThrones;
     
-    public InitialScreen()
+    public InitialScreen(ScreenStateManager screenStateManager)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1000, 600, 1,false);
+        
         playButton = new PlayButton();
         helpButton = new HelpButton();
         helpCommand = new HelpCommand();
         playCommand = new PlayGameCommand();
-        prepare();
+        screenStateManager1 = screenStateManager;
         GameofThrones = new GreenfootSound("GameofThrones.mp3");
         GameofThrones.play();
+        //System.out.println("before calling doPlay of Initial Screen - in initialscreen : " + screenStateManager);
+        prepare();
     }
+    
     
     
     public void prepare()
@@ -35,6 +39,9 @@ public class InitialScreen extends World
         playButton.setCommand(playCommand);
         helpButton.setCommand(helpCommand);
         
+        //ScreenStateManager ss = screenStateManager1;
+        //System.out.println("before calling doPlay of Initial Screen - in prepare : " + ss);
+        
         playCommand.setReceiver(
       
             new Receiver()
@@ -42,7 +49,11 @@ public class InitialScreen extends World
                 public void performAction()
                 {
                     if(Greenfoot.mouseClicked(playButton)){
-                        Greenfoot.setWorld(new Space());
+                        //Greenfoot.setWorld(new Space());
+                        //System.out.println("before calling doPlay of Initial Screen2 WWW : " + ss);
+                        System.out.println("before calling doPlay Method in playCommand.setReciever : " + screenStateManager1);
+                        
+                        screenStateManager1.doPlay();
                     }
             }
            });
