@@ -1,4 +1,21 @@
-## 1. Anuvrat Tiku
+## 1. Divyakumar Patel
+
+* **Design Pattern**
+
+    * Command
+    
+* **Kanban Value**   
+  
+    * Courage   
+
+* **Journal Entry**
+
+   This is the last week of our project and we have completed most of the project. We have implemented design pattern in our games and now we are moving towards fixing the bug. We are now going to make changes that improve the functions or structure of the code for that we have decided to walk through code and improve functions and methods. We also change the code that we did not write. The team has been adaptive to several changes as per the project requirements. This week we spent most of the time to fix the bug and add or modify functionality.
+  
+   Team member also helped each other to complete their work. Every team member was comfortable asking doubts if they were stuck at some problem. Many time team was afraid of bugs that cannot be solved. But I gave the courage to walk-through each bug and solve that bug with other team member. I actually used pair programming concept to solve bugs and we have solved many bugs using this approach. Every team member report about his work completed in week and each member is truthful about his work.
+
+
+## 4. Anuvrat Tiku
 
 * **Design Pattern**
 
