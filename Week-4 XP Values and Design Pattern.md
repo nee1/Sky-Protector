@@ -13,6 +13,22 @@
    * This is the last week of our project and we have completed most of the project. We have implemented design pattern in our games and now we are moving towards fixing the bug. We are now going to make changes that improve the functions or structure of the code for that we have decided to walk through code and improve functions and methods. We also change the code that we did not write. The team has been adaptive to several changes as per the project requirements. This week we spent most of the time to fix the bug and add or modify functionality.
   
    * Team member also helped each other to complete their work. Every team member was comfortable asking doubts if they were stuck at some problem. Many time team was afraid of bugs that cannot be solved. But I gave the courage to walk-through each bug and solve that bug with other team member. I actually used pair programming concept to solve bugs and we have solved many bugs using this approach. Every team member report about his work completed in week and each member is truthful about his work.
+   
+## 2. Aditya Chauhan
+
+* **Design Pattern**
+
+    * Observer
+    
+* **Kanban Value**   
+  
+    * Feedback   
+
+* **Journal Entry**
+
+   * I have been advocating Extreme programming value feedback for last three weeks for our team project . This was our fourth and final week of project development . During the fourth week of project development we completed remaining coding portion of our game Sky-Protector . After that each team-member completed implementation of their individual design patterns in different sections of project . Feedback has helped us very much throughout the project development process . There were many bugs in the code which needed to be fixed . So we took feedback to prioritize bug fixing and assigned tasks for the same . We also discussed about possibility of adding any new features to our project .
+  
+   * To summarize these four weeks the value of feedback has brought a great changes in me . I have learnt to listen to everyone and not to cut anyone while speaking . Even the team has learnt to listen to everyone and take others opinion seriously . I ca safely assume that i have been successful in monitoring and moderating the team while the value of feedback was successfully implemented.
 
 ## 3. Darshil Saraiya
 
