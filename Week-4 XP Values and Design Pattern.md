@@ -14,6 +14,23 @@
   
    * Team member also helped each other to complete their work. Every team member was comfortable asking doubts if they were stuck at some problem. Many time team was afraid of bugs that cannot be solved. But I gave the courage to walk-through each bug and solve that bug with other team member. I actually used pair programming concept to solve bugs and we have solved many bugs using this approach. Every team member report about his work completed in week and each member is truthful about his work.
 
+## 3. Darshil Saraiya
+
+* **Design Pattern**
+
+    * Strategy
+    
+* **Kanban Value**   
+  
+    * Simplicity  
+
+* **Journal Entry**
+
+   * After implementing the each team members design pattern, it was time to simplify the the whole game. While doing the bug fixes, I conveyed the idea of the first test which our project should pass the test of simplicity. I told them that practice of refactoring results in clean and clear code because of clear and clean will result in easily understandable code so there will not be any document required explaining the code of our game. I told them to simplify the only portion of our pattern which is needed tomorrow instead of simplifying the code which is needed tomorrow. This will increase the value of our work being done today.
+
+  
+   * I also provided the concept that simplifying the code which will increase the efficiency of our game. Simplicity can also be applied easily with the help of communication. For this instance, we made our code very simple  while fixing the bugs with the help of other team members by communicating during the time of the daily meeting. Thus refactoring and simplifying made our implementation of design pattern very easy to understand and to modify if need arise to do so in future.
+
 
 ## 4. Anuvrat Tiku
 
