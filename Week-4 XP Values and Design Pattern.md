@@ -76,3 +76,18 @@
 
    * Communication gap was resolved in last week due to the efforts of building the huge communication inconsistency. Everybody was able to understand that communication was key to the rapid development of the project. One team member who was implementing strategy design pattern had good understanding of command pattern. So they both decided to work together which was very fruitful for both of them. Such communication between team's individuals was the secret to rhythmic flow of our project development. This method of person to person communication instead of writing documents made development very flawless.
    * Discussions team is having in final week involves concise and clear narration thoughts. Bugs created during integration of each of the team members' modules were getting fixed. Although, bugs in numbers were very high, using the efficient communication they were getting fixed very quickly. Refactoring of code was getting done efficiently because of daily meeting happening at the same time and at the exact location. Finally, team could see the game being finalized with each bug fixes by members.
+
+   ## 6. Neel Patel
+
+* **Design Pattern**
+
+    * State
+    
+* **XP Value**   
+  
+    * Respect   
+
+* **Journal Entry**
+
+   * This is our fourth and final week of project development. I have been conveying throughout the project cycle that respect among each other is one of the very important virtues that guides software development, especially in its final phases. I advised members during the last week that no team member should commit changes that break compilation, that make existing tests fail, or that otherwise delay the work of their peers. I required all members to respect their own work by always striving for high quality and seeking for the best design for the solution at hand through refactoring.
+   * I continuously reminded my teammates that we need to respect each other and it is only the acceptable way ahead. I told my team that disagreements are a part and parcel of software engineering teams or as a matter of fact any collaborative team in the world. The final week of the project is bug fixing time which is stressful. So I provided the team, the understanding that the value of respect is very dependent upon the other values, and is very much oriented toward people in a team. To summarize these four weeks the value of Respect has brought a great changes and made development flow smooth. I can say that we have successfully implemented XP value Respect in our project development process.
