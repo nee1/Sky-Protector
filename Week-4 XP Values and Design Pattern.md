@@ -4,7 +4,7 @@
 
     * Command
     
-* **Kanban Value**   
+* **XP Value**   
   
     * Courage   
 
@@ -20,7 +20,7 @@
 
     * Observer
     
-* **Kanban Value**   
+* **XP Value**   
   
     * Feedback   
 
@@ -36,7 +36,7 @@
 
     * Strategy
     
-* **Kanban Value**   
+* **XP Value**   
   
     * Simplicity  
 
@@ -54,7 +54,7 @@
 
     * Factory
     
-* **Kanban Value**   
+* **XP Value**   
   
     * Limiting Work in Progress   
 
@@ -68,7 +68,7 @@
 
     * Observer
     
-* **Kanban Value**   
+* **XP Value**   
   
     * Communication   
 
