@@ -17,7 +17,7 @@ public class InitialScreen extends World
     public InitialScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1000, 400, 1,false);
+        super(1000, 600, 1,false);
         playButton = new PlayButton();
         helpButton = new HelpButton();
         helpCommand = new HelpCommand();
