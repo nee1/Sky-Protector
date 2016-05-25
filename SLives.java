@@ -13,7 +13,7 @@ public class SLives extends Lives
 
     public SLives()
     {
-        setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, Color.BLACK));
+        setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, new Color(0, 0, 0, 0)));
     }
 
     /**
@@ -22,7 +22,7 @@ public class SLives extends Lives
     public void bumpCount(int amount)
     {
         totalCount += amount;
-        setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, Color.BLACK));
+        setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, new Color(0, 0, 0, 0)));
     }
     
     public int getValue()

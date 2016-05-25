@@ -8,4 +8,5 @@ public interface SubjectHL
 {
     public void attach(ObserverHL o);
     public void notifyO(int amount,ObserverHL o);
+    public void notifyL(int amount, ObserverHL o);
 }

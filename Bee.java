@@ -6,23 +6,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Bee extends EnemyClass implements Subject
+public class Bee extends EnemyClass
 {
     int shotstaken=0;
     int ballstaken=0;
     int count=0;
     int health=100;
     int beekilled=0;
-    ArrayList<Observer> observers;
-     public Bee(){
-        observers = new ArrayList<Observer>();        
-    }
+    
     /**
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
+        if ( ! getWorld().getObjects(GameOverScreen.class).isEmpty() ) return;
         moveAround();
         
         GreenfootImage img = getImage();
@@ -43,12 +41,12 @@ public class Bee extends EnemyClass implements Subject
             shotstaken++;
         }
         
-        Actor Ball=getOneIntersectingObject(Ball.class);
+      /* Actor Ball=getOneIntersectingObject(Ball.class);
         if (Ball!=null)
         {
             getWorld().removeObject(Ball);
             shotstaken++;
-        }
+        }*/
         
         if (shotstaken>=1)
         {
@@ -56,13 +54,9 @@ public class Bee extends EnemyClass implements Subject
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
+            counter.ItotalCount(20);
             Killed counter2 = spaceWorld.getKilled();
-            attach(counter);
-            attach(counter2);
-            notifyO();
-            // counter.bumpCount(20);
-            // Killed counter2 = spaceWorld.getKilled();
-            // counter2.bumpCount(1);
+            counter2.ItotalCount(1);
             beekilled++;
             getWorld().removeObject(this);
         }
@@ -73,7 +67,7 @@ public class Bee extends EnemyClass implements Subject
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-20);
+           // counter.ItotalCount(-20);
             getWorld().removeObject(this);
         }
     }
@@ -104,18 +98,5 @@ public class Bee extends EnemyClass implements Subject
         {
             turn(180);
         }      
-    }
-    public void attach(Observer o){
-        observers.add(o);
-    }
-    public void notifyO(){
-        for(Observer o : observers){
-            if(o instanceof Score){
-            o.ItotalCount(20);
-            }
-            else if(o instanceof Killed){
-            o.ItotalCount(1);
-            }
-        }
     }
 }

@@ -7,13 +7,13 @@ import java.awt.Color;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Lives extends Actor
+public class Lives extends Actor implements ObserverHL
 {
     public int totalCount = 3;
 
     public Lives()
     {
-        setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, Color.BLACK));
+        setImage(new GreenfootImage("Lives : " + totalCount, 30, Color.WHITE, new Color(0, 0, 0, 0)));
     }
 
     /**
@@ -22,11 +22,15 @@ public class Lives extends Actor
     public void bumpCount(int amount)
     {
         totalCount += amount;
-        setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, Color.BLACK));
+        setImage(new GreenfootImage("Lives : " + totalCount, 30, Color.WHITE, new Color(0, 0, 0, 0)));
     }
     
     public int getValue()
     {
         return totalCount;
+    }
+    
+    public void update(int amount){
+        bumpCount(amount);
     }
 }

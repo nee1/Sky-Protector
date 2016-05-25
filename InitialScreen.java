@@ -13,19 +13,16 @@ public class InitialScreen extends SkyWorld
     private PlayGameCommand playCommand;
     private HelpCommand helpCommand;
     private ScreenStateManager screenStateManager1;
-    private static GreenfootSound GameofThrones;
     
     public InitialScreen(ScreenStateManager screenStateManager)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        
+        super(1000, 600, 1,false);
         playButton = new PlayButton();
         helpButton = new HelpButton();
         helpCommand = new HelpCommand();
         playCommand = new PlayGameCommand();
         screenStateManager1 = screenStateManager;
-        GameofThrones = new GreenfootSound("GameofThrones.mp3");
-        GameofThrones.play();
         //System.out.println("before calling doPlay of Initial Screen - in initialscreen : " + screenStateManager);
         prepare();
     }
@@ -34,8 +31,9 @@ public class InitialScreen extends SkyWorld
     
     public void prepare()
     {
-        addObject(playButton, getWidth()/2, 100);
-        addObject(helpButton, getWidth()/2, 200);        
+       
+        addObject(playButton, getWidth()/2, 250);
+        addObject(helpButton, getWidth()/2, 350);        
         playButton.setCommand(playCommand);
         helpButton.setCommand(helpCommand);
         

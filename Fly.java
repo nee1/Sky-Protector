@@ -19,6 +19,7 @@ public class Fly extends EnemyClass
      */
     public void act() 
     {
+        if ( ! getWorld().getObjects(GameOverScreen.class).isEmpty() ) return;
         GreenfootImage img = getImage();
         img.scale(20,20);
         setImage(img);
@@ -38,12 +39,12 @@ public class Fly extends EnemyClass
             shotstaken++;
         }
         
-        Actor Ball=getOneIntersectingObject(Ball.class);
+       /* Actor Ball=getOneIntersectingObject(Ball.class);
         if (Ball!=null)
         {
             getWorld().removeObject(Ball);
             shotstaken++;
-        }
+        }*/
        
         if (shotstaken>=1)
         {
@@ -51,9 +52,9 @@ public class Fly extends EnemyClass
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(30);
+            counter.ItotalCount(30);
             Killed counter2 = spaceWorld.getKilled();
-            counter2.bumpCount(1);
+            counter2.ItotalCount(1);
             enemykilled++;
             getWorld().removeObject(this);
         }
@@ -64,7 +65,7 @@ public class Fly extends EnemyClass
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-30);
+            //counter.ItotalCount(-30);
             getWorld().removeObject(this);
         }
     }

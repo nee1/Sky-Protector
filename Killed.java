@@ -13,20 +13,19 @@ public class Killed extends Actor implements Observer
 
     public Killed()
     {
-        setImage(new GreenfootImage("", 20, Color.WHITE, Color.BLACK));
+        setImage(new GreenfootImage("Killed : ", 30, Color.WHITE, new Color(0, 0, 0, 0)));
     }
-
 
     /**
      * Increase the total amount displayed on the counter, by a given amount.
      */
-    public void bumpCount(int amount)
+    public void bumpCount()
     {
-        totalCount += amount;
-        setImage(new GreenfootImage("" + totalCount, 20, Color.WHITE, Color.BLACK));
+        setImage(new GreenfootImage("Killed : " + totalCount, 30, Color.WHITE, new Color(0, 0, 0, 0)));
     }
+    
     public void ItotalCount(int amount){
         totalCount += amount;
-        bumpCount(totalCount);
+        bumpCount();
     }
 }

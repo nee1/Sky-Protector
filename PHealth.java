@@ -13,7 +13,7 @@ public class PHealth extends Lives
 
     public PHealth()
     {
-        setImage(new GreenfootImage("" + totalCount, 30, Color.RED, Color.BLACK));
+        setImage(new GreenfootImage("" + totalCount, 30, Color.RED, new Color(0, 0, 0, 0)));
     }
 
     /**
@@ -22,7 +22,7 @@ public class PHealth extends Lives
     public void bumpCount(int amount)
     {
         totalCount += amount;
-        setImage(new GreenfootImage("" + totalCount, 30, Color.RED, Color.BLACK));
+        setImage(new GreenfootImage("" + totalCount, 30, Color.RED, new Color(0, 0, 0, 0)));
         if (totalCount<=0)
         {
             World Space;

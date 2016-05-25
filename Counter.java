@@ -16,8 +16,7 @@ public class Counter extends Actor
      */
     public void act() 
     {
-        setImage(new GreenfootImage("Score : " + score, 24, Color.WHITE, Color.BLACK));
-        
+        setImage(new GreenfootImage("Score : " + score, 24, Color.GREEN, new Color(0, 0, 0, 0)));
     }    
     
     public void addScore()

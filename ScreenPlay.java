@@ -34,9 +34,9 @@ public class ScreenPlay extends ScreenState
         ssm.setState("ScreenGameOver");
     }
     
-    @Override
+    /*@Override
     public void doGameOver(SkyWorld skyworld){
         System.out.println("DoGameOver of ScreenPlayState :: " + this.getClass().getName());
         ssm.setState("ScreenGameOver");
-    }
+    }*/
 }

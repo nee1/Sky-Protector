@@ -16,18 +16,19 @@ public class Heart extends Spawner
      */
     public void act() 
     {
+        if ( ! getWorld().getObjects(GameOverScreen.class).isEmpty() ) return;
         GreenfootImage img = getImage();
         img.scale(20,20);
         setImage(img);
         
         movearound();
         
-        Actor Ball=getOneIntersectingObject(Ball.class);
+       /* Actor Ball=getOneIntersectingObject(Ball.class);
         if (Ball!=null)
         {
             getWorld().removeObject(Ball);
             ballstaken++;
-        }
+        }*/
        
         if (ballstaken>=1)
         {

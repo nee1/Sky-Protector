@@ -9,9 +9,9 @@ public class ScreenGameOver extends ScreenState
     }
     
     @Override
-    public void doInitGame(){
-        System.out.println("InitGame of ScreenGameOverState :: " + this.getClass().getName());
-        ssm.setState("ScreenInitGame");
+    public void doPlay(){
+        System.out.println("PlayGame of ScreenGameOverState :: " + this.getClass().getName());
+        ssm.setState("ScreenPlay");
     }
     
     @Override

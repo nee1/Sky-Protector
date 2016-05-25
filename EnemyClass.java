@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class EnemyClass here.
  * 
- * @author (Anuvrat Tiku) 
+ * @author (your name) 
  * @version (a version number or a date)
  */
 public class EnemyClass extends Actor

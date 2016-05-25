@@ -1,5 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+/**
+ * Write a description of class Rock here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class Rock2 extends EnemyClass
 {
     int shotstaken=0;
@@ -8,8 +14,7 @@ public class Rock2 extends EnemyClass
     int NUM_FRAGMENTS=40;
     private boolean dead=false;
     int size = Greenfoot.getRandomNumber(50) + 40;
-    boolean rock = false; //To explode rock
-    
+    boolean rock = false;
     /**
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,6 +22,7 @@ public class Rock2 extends EnemyClass
     
     public void act() 
     {
+        if ( ! getWorld().getObjects(GameOverScreen.class).isEmpty() ) return;
         GreenfootImage img = getImage();
         img.scale (size, size);
         
@@ -35,17 +41,18 @@ public class Rock2 extends EnemyClass
         Actor Shot=getOneIntersectingObject(Shot.class);
         if (Shot!=null)
         {
+            rockexplode();
             getWorld().removeObject(Shot);
             shotstaken++;
             rock = true;
         }
         
-        Actor Ball=getOneIntersectingObject(Ball.class);
+       /* Actor Ball=getOneIntersectingObject(Ball.class);
         if (Ball!=null)
         {
             getWorld().removeObject(Ball);
             shotstaken++;
-        }
+        }*/
         
         if (atSide() || rock)
         {getWorld().removeObject(this);}
@@ -77,14 +84,14 @@ public class Rock2 extends EnemyClass
             Space.removeObject(Bee);
         }
         
-        Actor Spider;
+     /*   Actor Spider;
         Spider = getOneIntersectingObject(Spider.class);
         if (Spider !=null)
         {
             World Space;
             Space = getWorld();
             Space.removeObject(Spider);
-        }
+        }*/
         
         Actor Fly;
         Fly = getOneIntersectingObject(Fly.class);
@@ -106,5 +113,18 @@ public class Rock2 extends EnemyClass
         
         else
         return false;
+    }
+    
+    public void rockexplode()
+    {
+        placePebble (getX(), getY(), NUM_FRAGMENTS);
+    }
+    
+    private void placePebble(int x, int y, int numFragments)
+    {
+        for (int i=0; i < numFragments; i++) 
+        {
+            getWorld().addObject ( new Pebble(), x, y );
+        }
     }
 }

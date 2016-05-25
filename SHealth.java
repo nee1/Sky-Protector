@@ -13,7 +13,7 @@ public class SHealth extends Lives
 
     public SHealth()
     {
-        setImage(new GreenfootImage("" + totalCount, 30, Color.GREEN, Color.BLACK));
+        setImage(new GreenfootImage("" + totalCount, 30, Color.GREEN, new Color(0, 0, 0, 0)));
     }
 
     /**
@@ -22,28 +22,28 @@ public class SHealth extends Lives
     public void bumpCount(int amount)
     {
         totalCount += amount;
-        setImage(new GreenfootImage("" + totalCount, 30, Color.GREEN, Color.BLACK));
+        setImage(new GreenfootImage("" + totalCount, 30, Color.GREEN, new Color(0, 0, 0, 0)));
         if (totalCount<=0)
         {
             totalCount=3;
         }
         
         if (totalCount>=6)
-        {setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, Color.BLACK));}
+        {setImage(new GreenfootImage("" + totalCount, 30, Color.WHITE, new Color(0, 0, 0, 0)));}
         
         if (totalCount==5)
-        {setImage(new GreenfootImage("" + totalCount, 30, Color.CYAN, Color.BLACK));}
+        {setImage(new GreenfootImage("" + totalCount, 30, Color.CYAN, new Color(0, 0, 0, 0)));}
         
         if (totalCount==4)
-        {setImage(new GreenfootImage("" + totalCount, 30, Color.BLUE, Color.BLACK));}
+        {setImage(new GreenfootImage("" + totalCount, 30, Color.BLUE, new Color(0, 0, 0, 0)));}
         
         if (totalCount==3)
-        {setImage(new GreenfootImage("" + totalCount, 30, Color.GREEN, Color.BLACK));}
+        {setImage(new GreenfootImage("" + totalCount, 30, Color.GREEN, new Color(0, 0, 0, 0)));}
         
         if (totalCount==2)
-        {setImage(new GreenfootImage("" + totalCount, 30, Color.YELLOW, Color.BLACK));}
+        {setImage(new GreenfootImage("" + totalCount, 30, Color.YELLOW, new Color(0, 0, 0, 0)));}
         
         if (totalCount==1)
-        {setImage(new GreenfootImage("" + totalCount, 30, Color.RED, Color.BLACK));}
+        {setImage(new GreenfootImage("" + totalCount, 30, Color.RED, new Color(0, 0, 0, 0)));}
     }
 }

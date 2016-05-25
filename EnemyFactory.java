@@ -1,7 +1,7 @@
 /**
  * Write a description of class EnemyFactory here.
  * 
- * @author (Anuvrat Tiku) 
+ * @author (your name) 
  * @version (a version number or a date)
  */
 public class EnemyFactory  
@@ -41,17 +41,23 @@ public class EnemyFactory
            enemyClass = new Fly();  
         }
         
-        else if(enemyType == 5)
+        /*else if(enemyType == 5)
         {
            enemyClass = new Spider();  
-        }
+        }*/
         
-        else if(enemyType == 6)
+        else if(enemyType == 5)
         {
            enemyClass = new Lady();  
         }
         
    
+      /*  else if(enemyType == 7)
+        {
+           enemyClass = new Baby();  
+        }*/
+        
+        
         return enemyClass;
         
     }

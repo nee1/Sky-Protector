@@ -17,11 +17,6 @@ public class Space extends SkyWorld
     private PHealth thePHealth;
     private int timer = 0;
     private int planespawn = 0;
-    private static GreenfootSound GameofThrones;
-    /**
-     * Constructor for objects of class Space.
-     * 
-     */
     public ScreenStateManager screenManager;
     
     /**
@@ -36,13 +31,13 @@ public class Space extends SkyWorld
         addObject(new Rocket(),400,300);
         
         theScore = new Score();
-        addObject(theScore, 500, 30);
+        addObject(theScore, 800, 30);
         
         theLives = new Lives();
-        addObject(theLives, 30, 570);
+        addObject(theLives, 65, 570);
         
         theKilled = new Killed();
-        addObject(theKilled, 30, 30);
+        addObject(theKilled, 65, 30);
         
         theRHealth = new RHealth();
         addObject(theRHealth, 300, 570);
@@ -59,7 +54,7 @@ public class Space extends SkyWorld
         addObject(new Ship(),600,300);
         */
         
-        setPaintOrder(Rocket.class, Score.class, RHealth.class, SHealth.class, Lives.class, SLives.class, PHealth.class, Killed.class);
+        setPaintOrder(GameOverScreen.class, Rocket.class, Score.class, RHealth.class, SHealth.class, Lives.class, SLives.class, PHealth.class, Killed.class);
     }
     
     public ScreenStateManager getScreenStateManager(){
@@ -68,8 +63,6 @@ public class Space extends SkyWorld
         return screenManager;
     }
     
-    
-   
     public Score getScore()
     {
         return theScore;
@@ -107,15 +100,18 @@ public class Space extends SkyWorld
     
     public void act()
     {
-       timer++;
+        timer++;
         planespawn++;
+        
+        
+        //divya added start---------------------------------------------
         int selectedEnemy = 0;
         EnemyFactory enemy = new EnemyFactory();
         EnemyClass enemyClass = null;
-        
+        if ( !this.getObjects(GameOverScreen.class).isEmpty() ) return;
         if(timer>=100)
         {
-             selectedEnemy = Greenfoot.getRandomNumber(20);
+             selectedEnemy = Greenfoot.getRandomNumber(40);
             if (selectedEnemy==0)
             {
                 enemyClass = enemy.makeEnemyFactory(selectedEnemy);
@@ -153,7 +149,7 @@ public class Space extends SkyWorld
             }
         }
         
-        if(timer>=1500)
+        if(timer>=1000)
         {
             selectedEnemy = Greenfoot.getRandomNumber(240);
             if (selectedEnemy==4)
@@ -163,7 +159,7 @@ public class Space extends SkyWorld
             }
         }
         
-        if(timer>=2000)
+        if(timer>=1500)
         {
             selectedEnemy = Greenfoot.getRandomNumber(300);
              if (selectedEnemy==5)
@@ -174,7 +170,7 @@ public class Space extends SkyWorld
         }
                 
         
-        if(timer>=2500)
+       /*8 if(timer>=1000)
         {
             selectedEnemy = Greenfoot.getRandomNumber(1500);
             if (selectedEnemy==6)
@@ -182,9 +178,48 @@ public class Space extends SkyWorld
                 enemyClass = enemy.makeEnemyFactory(selectedEnemy);
                 addObject(enemyClass, (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));
             }
+        }*/
+        
+       /* if (timer>=100)
+        {if (Greenfoot.getRandomNumber(100)<5)
+        {addObject(new Enemy(), (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));}
         }
         
- 
+        if (timer>=2500)
+        {if (Greenfoot.getRandomNumber(1500)==1)
+        {addObject(new Lady(), 500, 300);}
+        }
+        
+        if (timer>=1000)
+        {if (Greenfoot.getRandomNumber(700)<5)
+        {addObject(new Bee(), (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));}
+        }
+        
+        if (timer>=2000)
+        {if (Greenfoot.getRandomNumber(1500)<5)
+        {addObject(new Spider(), (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));}
+        }
+        
+        if (timer>=500)
+        {if (Greenfoot.getRandomNumber(4000)<15)
+        {addObject(new Rock(), 3, (Greenfoot.getRandomNumber(600)));}
+        }
+        
+        if (timer>=500)
+        {if (Greenfoot.getRandomNumber(4000)<15)
+        {addObject(new Rock2(), 997, (Greenfoot.getRandomNumber(600)));}
+        }
+        
+        if (timer>=1500)
+        {if (Greenfoot.getRandomNumber(1200)<5)
+        {addObject(new Fly(), (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));}
+        }
+        
+        if (timer>=100)
+        {if (Greenfoot.getRandomNumber(2500)==1)
+        {addObject(new Baby(), (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));}
+        }
+        */
         if (timer>=100)
         {if (Greenfoot.getRandomNumber(5000)==1)
         {addObject(new Life(), (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));}
@@ -193,13 +228,12 @@ public class Space extends SkyWorld
         if (Greenfoot.getRandomNumber(2000)==1)
         {addObject(new Heart(), (Greenfoot.getRandomNumber(1000)), (Greenfoot.getRandomNumber(600)));}
         
-        if (planespawn>=5000)
+      /* if (planespawn>=5000)
         {
             addObject (new Plane(), 50, 550);
             thePHealth = new PHealth();
             addObject(thePHealth, 970, 30);
             planespawn=0;
-        }
-    
+        }*/
     }
 }

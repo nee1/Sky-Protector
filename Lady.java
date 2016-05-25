@@ -6,18 +6,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Lady extends EnemyClass implements Subject
+public class Lady extends EnemyClass
 {
     int shotstaken=0;
     int ladykilled=0;
     int ballstaken=0;
-    ArrayList<Observer> observers;
-    public Lady(){
-        observers = new ArrayList<Observer>();        
-    }
+    int NUM_FRAGMENTS=40;
+    
     public void act() 
     
     {
+        if ( ! getWorld().getObjects(GameOverScreen.class).isEmpty() ) return;
         moveAround();
         eat();
         
@@ -39,44 +38,38 @@ public class Lady extends EnemyClass implements Subject
             shotstaken++;
         }
         
-        Actor Ball=getOneIntersectingObject(Ball.class);
+       /* Actor Ball=getOneIntersectingObject(Ball.class);
         if (Ball!=null)
         {
             getWorld().removeObject(Ball);
             ballstaken++;
-        }
+        }*/
         
-        if (shotstaken>=30)
+        if (shotstaken>=10)
         {
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
+            counter.ItotalCount(500);
             Killed counter2 = spaceWorld.getKilled();
-            attach(scoreCounter);
-            attach(killCounter);
-            notifyO();
-            //counter.bumpCount(500);
-            
-            //counter2.bumpCount(1);
+            counter2.ItotalCount(1);
             ladykilled++;
+            rockexplode();
             getWorld().removeObject(this);
         }
         
-        if (ballstaken>=30)
+        if (ballstaken>=10)
         {
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-500);
+         //   counter.ItotalCount(-500);
+         rockexplode();
             getWorld().removeObject(this);
         }
     }
-
-    public void attach(Observer o){
-        observers.add(o);
-    }
-
+    
     public void moveAround()
     {
         if (ladykilled<5)
@@ -115,7 +108,7 @@ public class Lady extends EnemyClass implements Subject
             Space = getWorld();
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-10);
+           // counter.ItotalCount(-10);
             Space.removeObject(Enemy);
         }
         
@@ -127,11 +120,11 @@ public class Lady extends EnemyClass implements Subject
             Space = getWorld();
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();  
-            counter.bumpCount(-20);
+           // counter.ItotalCount(-20);
             Space.removeObject(Bee);
         }
         
-        Actor Spider;
+      /*  Actor Spider;
         Spider = getOneObjectAtOffset(0,0,Spider.class);
         if (Spider !=null)
         {
@@ -139,9 +132,9 @@ public class Lady extends EnemyClass implements Subject
             Space = getWorld();
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-30);
+            counter.ItotalCount(-30);
             Space.removeObject(Spider);
-        }
+        }*/
         
         Actor Rock;
         Rock = getOneObjectAtOffset(0,0,Rock.class);
@@ -167,44 +160,53 @@ public class Lady extends EnemyClass implements Subject
         {
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-500);
+          //  counter.ItotalCount(-500);
             World Space;
             Space = getWorld();
             Space.removeObject(Lady);
         }
         
-        Actor Plane;
+       /* Actor Plane;
         Plane = getOneObjectAtOffset(0,0,Plane.class);
         if (Plane !=null)
         {
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-1000);
+            counter.ItotalCount(-1000);
             World Space;
             Space = getWorld();
             Space.removeObject(Plane);
-        }
+        }*/
         
-        Actor Baby;
+     /*  Actor Baby;
         Baby = getOneObjectAtOffset(0,0,Baby.class);
         if (Baby !=null)
         {
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-1000);
+            counter.ItotalCount(-1000);
             World Space;
             Space = getWorld();
             Space.removeObject(Baby);
+        }*/
+    
+    
+    
+    
+    }
+    
+    public void rockexplode()
+    {
+        placePebble (getX(), getY(), NUM_FRAGMENTS);
+    }
+    
+    private void placePebble(int x, int y, int numFragments)
+    {
+        for (int i=0; i < numFragments; i++) 
+        {
+            getWorld().addObject ( new Pebble(), x, y );
         }
     }
-     public void notifyO(){
-        for(Observer o : observers){
-            if(o instanceof Score){
-            o.ItotalCount(500);
-            }
-            else if(o instanceof Killed){
-            o.ItotalCount(1);
-            }
-        }
-    }
+
+
 }   

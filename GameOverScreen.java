@@ -17,7 +17,10 @@ public class GameOverScreen extends Actor
     public GameOverScreen(ScreenStateManager screenStateManager, SkyWorld sky)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        setImage(new GreenfootImage("Game Over", 48, Color.WHITE, Color.BLACK));
+        //super(1000, 500, 1,false);
+        sky.getBackground().drawImage(new GreenfootImage("GAME OVER!", 48, Color.WHITE, new Color(0, 0, 0, 0)), 370,150);
+        //int score = sky.getScore();
+        
         screenStateManager1 = screenStateManager;
         skyworld = sky;
         playButton = new PlayButton();
@@ -32,8 +35,8 @@ public class GameOverScreen extends Actor
     public void prepare()
     {
         System.out.println("getWorld in GameOverScreen : " + getWorld());
-        skyworld.addObject(playButton, skyworld.getWidth()/2, 100);
-        skyworld.addObject(helpButton, skyworld.getWidth()/2, 200);
+        skyworld.addObject(playButton, skyworld.getWidth()/2, 350);
+        skyworld.addObject(helpButton, skyworld.getWidth()/2, 450);
         playButton.setCommand(playCommand);
         helpButton.setCommand(helpCommand);
         //ScreenStateManager ss = screenStateManager1;
@@ -46,7 +49,7 @@ public class GameOverScreen extends Actor
                     if(Greenfoot.mouseClicked(playButton)){
                         System.out.println("before calling doPlay Method in playCommand.setReciever : " + screenStateManager1);
                         //System.out.println("before calling Screen2 : " + ss);
-                        screenStateManager1.doInitGame();
+                        screenStateManager1.doPlay();
                     }
             }
            });

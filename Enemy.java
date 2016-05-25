@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class Enemy here.
  * 
  * @author XianBallz
  * @version (a version number or a date)
  */
-public class Enemy extends EnemyClass implements Subject
+public class Enemy extends EnemyClass implements Subject 
 {
     
     int shotstaken=0;
@@ -17,11 +17,16 @@ public class Enemy extends EnemyClass implements Subject
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Enemy(){
+    
+     public Enemy(){
         observers = new ArrayList<Observer>();        
     }
+    
+    
+    
     public void act() 
     {
+        if ( ! getWorld().getObjects(GameOverScreen.class).isEmpty() ) return;
         moveAround();
         
         Actor Bullet=getOneIntersectingObject(Bullet.class); 
@@ -38,12 +43,12 @@ public class Enemy extends EnemyClass implements Subject
             shotstaken++;
         }
         
-        Actor Ball=getOneIntersectingObject(Ball.class);
+      /*  Actor Ball=getOneIntersectingObject(Ball.class);
         if (Ball!=null)
         {
             getWorld().removeObject(Ball);
             shotstaken++;
-        }
+        }*/
         
         if (ballstaken>=1)
         {
@@ -51,19 +56,25 @@ public class Enemy extends EnemyClass implements Subject
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             Space spaceWorld = (Space) getWorld();
             Score counter = spaceWorld.getScore();
-            counter.bumpCount(-10);
+            //counter.ItotalCount(-10);
             getWorld().removeObject(this);
         }
        
         if (shotstaken>=1)
         {
+           //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
             //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
-            //getWorld().addObject(new Enemy(),(Greenfoot.getRandomNumber(1000)),(Greenfoot.getRandomNumber(600)));
+            //Space spaceWorld = (Space) getWorld();
+            //Score counter = spaceWorld.getScore();
+            //counter.ItotalCount(10);
+            //Killed counter2 = spaceWorld.getKilled();
+            //counter2.ItotalCount(1);
             Space spaceWorld = (Space) getWorld();
-            Score counter = spaceWorld.getScore();
-            counter.bumpCount(10);
-            Killed counter2 = spaceWorld.getKilled();
-            counter2.bumpCount(1);
+            Score scoreCounter = spaceWorld.getScore();
+            Killed killCounter = spaceWorld.getKilled();
+            attach(scoreCounter);
+            attach(killCounter);
+            notifyO();
             enemykilled++;
             getWorld().removeObject(this);
         }
@@ -71,17 +82,14 @@ public class Enemy extends EnemyClass implements Subject
     
     public void moveAround()
     {
-        if (enemykilled<100)
+        if (enemykilled<25)
         {
-            move(5);
+            move(4);
+        } else{
+            move(6);
         }
         
-        if (enemykilled>=100)
-        {
-            move(9);
-        }
-        
-        if (Greenfoot.getRandomNumber(150)<5)
+        if (Greenfoot.getRandomNumber(100)<7)
         {
             turn(Greenfoot.getRandomNumber(180));
         }
@@ -96,6 +104,7 @@ public class Enemy extends EnemyClass implements Subject
             turn(180);
         }      
     }
+    
     public void attach(Observer o){
         observers.add(o);
     }
